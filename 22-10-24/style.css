@@ -1,0 +1,8 @@
+.hello {
+    border: 6px dotted black;
+    background-color: beige;
+    color: blueviolet;
+    font-size: 20px;
+    text-align: center;
+    font-family: sans-serif;
+}
