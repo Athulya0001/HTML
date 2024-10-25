@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&display=swap');
+
+span{
+    border: 2px solid purple;
+    border-radius: 45px;
+}
+
+p{
+    text-transform: capitalize;
+    text-transform: lowercase;
+    text-transform: uppercase;
+
+    text-align: justify;
+
+    text-decoration: dashed;
+
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Kablammo", system-ui;
+
+    font-weight: bolder;
+
+    line-height: 50px;
+
+    font-optical-sizing: auto;
+}
