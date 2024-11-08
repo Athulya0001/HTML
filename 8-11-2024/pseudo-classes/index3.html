@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p:first-child{
+            color: brown;
+        }
+        p i:first-child{
+            color: green;
+            font-size: 20px;
+        }
+        p:first-child i{ 
+            color: blue;
+            background-color: yellow;
+            font-size: 25px;
+        }
+        r:lang(yes) {
+            background-color: black;
+            color: white;
+            font-size: 20px;
+            quotes: "|" "|";
+        }
+    </style>
+</head>
+<body>
+    <p>I am an <i>AMAZING</i> person and very <i>KIND</i>hearted</p>
+    <p>I am <i>strong</i>I am <i>weak</i></p>
+    <p>I am really beautifull</p>
+
+    <div>
+        <p>I am really <i>HAPPY</i> Today</p>
+        <p>I am really <r lang="yes"> Amazing!</r></p>
+        <p>I am really happy</p>
+    </div>
+</body>
+</html>
