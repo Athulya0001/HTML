@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: green;
+}
+
+.box {
+    background-color: blue;
+    color: yellow;
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation: anime1 5s ease-in 1s 4 backwards;
+    animation-direction: alternate;
+}
+
+
+@keyframes anime1 {
+    from{
+        width: 200px;
+        /* height: 200px; */
+    }
+
+    to{
+        width: 600px;
+        /* height: 400px; */
+    }
+}
+
+
+.container2 {
+    background-color: yellowgreen;
+    width: 1000px;
+    height: 500px;
+    margin: auto;
+    /* position: relative; */
+}
+
+.box2 {
+    position: relative;
+    background-color: violet;
+    color: brown;
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation: anime2 10s ease-in 1s 4 forwards;
+    animation-direction: alternate;
+}
+
+@keyframes anime2 {
+    0% {
+        top: 0px;
+        left: 0px;
+    }
+    20% {
+        top: 400px;
+        left: 0px;
+    }
+    40% {
+        top: 400px;
+        left: 900px;
+    }
+    60% {
+        top: 0px;
+        left: 900px;
+    }
+    80% {
+        top: 400px;
+        left: 0px;
+    }
+    
+    100% {
+        top: 0px;
+        left: 900px;
+    }
+}
