@@ -1,0 +1,31 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+.cube {
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+.cube div {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid #333;
+    position: absolute;
+}
+
+.front {
+    transform: translateZ(50px);
+    background-color: #ff3e00;
+}
+
+.back {
+    transform: rotateY(180deg) translateZ(50px);
+}

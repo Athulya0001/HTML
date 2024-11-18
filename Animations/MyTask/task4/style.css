@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(78, 78, 129);
+}
+
+.card {
+    width: 300px;
+    height: 500px;
+    background: linear-gradient(45deg, green, yellow);
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform-style: preserve-3d;
+    transition: transform 5s;
+    perspective: 1000px;
+}
+
+.card:hover {
+    transform: rotateY(360deg) rotateX(180deg);
+}

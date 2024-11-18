@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: aliceblue;
+}
+
+.book {
+    width: 500px;
+    height: 400px;
+    perspective: 1000px;
+}
+
+.inner-book {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: flipBook 5s infinite alternate;
+}
+
+.page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: orange;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: whitesmoke;
+    backface-visibility: hidden;
+}
+
+.page:nth-child(2){
+    background-color: rgb(255, 115, 0);
+    transform: rotateY(180deg);
+}
+
+@keyframes flipBook {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(-180deg);
+    }
+}
