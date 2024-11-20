@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 1;
+        width: 200px;
+        height: 200px;
+    }
+    to {
+        opacity: 0;
+        width: 400px;
+        height: 400px;
+    }
+}
+
+.fade-in {
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    /* margin: auto; */
+    opacity: 0;
+    animation: fadeIn 8s ease-in-out infinite alternate;
+}

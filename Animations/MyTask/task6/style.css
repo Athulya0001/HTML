@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(13, 13, 31);
+}
+
+.wheel {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spinWheel 5s infinite linear;
+}
+
+.wheel div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: aquamarine;
+    clip-path: polygon(100% 25%, 0% 100%, 60% 40%);
+}
+
+.wheel div:nth-child(1) {
+    transform: rotateY(0deg) translateZ(100px);
+    background-color: pink;
+}
+.wheel div:nth-child(2) {
+    transform: rotateY(60deg) translateZ(100px);
+    background-color: hotpink;
+}
+.wheel div:nth-child(3) {
+    transform: rotateY(120deg) translateZ(100px);
+    background-color: rosybrown;
+}
+.wheel div:nth-child(4) {
+    transform: rotateY(180deg) translateZ(100px);
+    background-color: brown;
+}
+.wheel div:nth-child(5) {
+    transform: rotateY(240deg) translateZ(100px);
+    background-color: rgb(230, 3, 40);
+}
+.wheel div:nth-child(6) {
+    transform: rotateY(300deg) translateZ(100px);
+    background-color: rgb(163, 12, 223);
+}
+
+@keyframes spinWheel {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
